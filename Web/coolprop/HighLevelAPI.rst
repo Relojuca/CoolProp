@@ -43,13 +43,13 @@ To retrieve either the *vapor* or *liquid* properties along the saturation curve
     # Import the PropsSI function
     In [1]: from CoolProp.CoolProp import PropsSI
     
-    # Saturated vapor enthalpy of Water at 1 atm in J/kg-K
+    # Saturated vapor enthalpy of Water at 1 atm in J/kg
     In [2]: H_V = PropsSI('H','P',101325,'Q',1,'Water'); print(H_V)
 
-    # Saturated liquid enthalpy of Water at 1 atm in J/kg-K
+    # Saturated liquid enthalpy of Water at 1 atm in J/kg
     In [3]: H_L = PropsSI('H','P',101325,'Q',0,'Water'); print(H_L)
 
-    # Latent heat of vaporization of Water at 1 atm in J/kg-K
+    # Latent heat of vaporization of Water at 1 atm in J/kg
     In [4]: H_V - H_L
 
 .. note::
